@@ -11,7 +11,7 @@ layout: default
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Дата публикации: {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   {% include disqus.html %}
@@ -45,7 +45,7 @@ layout: default
       {% for review in reviews %}
 <ul>
   <li>
-    <p><b>{{ review.name }}</b> on <i>{{ review.date | date: '%B %d, %Y' }}</i></p>
+    <p><b>{{ review.name }}</b> написал <i>{{ review.date | date: '%B %d, %Y' }}</i></p>
     {% if review.comment %}
     <p>
       {{review.comment}}
